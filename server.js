@@ -13,15 +13,18 @@ var articleone = {
     content: ` 
     
     function createtemplate(data){
+    var title = data.file;
+    var date = data.date;
+    var heading = data.header;
+    var content = data.content ;
+    
 var htmltemplate = `
 <html>
-<head>
-    
-    <title> 
+  <head>
+      <title> 
                   ${title}
-    </title>
-    
-  <link href="/ui/style.css" rel="stylesheet" />
+      </title>
+   <link href="/ui/style.css" rel="stylesheet" />
 </head>
 
 <body>
