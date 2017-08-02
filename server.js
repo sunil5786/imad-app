@@ -5,20 +5,68 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var content = {
+var articleone = {
     
     title:'Article One | Sunil ',
     heading:'Article oneee....',
     date:'2nd August 2017',
-    content:'<p>'
-    this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .
-    </p>
+    content: ` 
+    
+    
+var html template = `
+<html>
+<head>
+    
+    <title> ${title} </title>
+  <link href="/ui/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+    <div>
+        
+        <a href="/">Home </a>
+        
+        </div>
+        <hr/>
+<h3>
+    ${header}
+    
+    </h3>    
+    
+    <div>
+        ${date}
+        
+    </div>
+    
+    <div>
+       ${content}
+    </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+    
+    
+`
     <p>
     this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .
     </p>
     <p>
     this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .
-    </p>'
+    </p>
+    <p>
+    this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .this is my content for my first article .
+    </p>
+        `
     
 };
 
