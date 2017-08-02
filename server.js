@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-    articleone : { },
+    articleone : {    },
     articletwo : { },
     articlethree : { },
 };
