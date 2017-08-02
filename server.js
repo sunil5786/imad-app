@@ -5,7 +5,11 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleone = {
+var articles = {
+    
+    articleone = {},
+    articletwo = {},
+    articlethree = {},
     
     title:'Article One | Sunil ',
     heading:'Article oneee....',
@@ -24,7 +28,7 @@ var htmlTemplate = `
   
       <title> 
       
-      ${titlee} 
+      ${title} 
       
       </title>
       
