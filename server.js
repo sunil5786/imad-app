@@ -17,7 +17,10 @@ var html template = `
 <html>
 <head>
     
-    <title> ${title} </title>
+    <title> 
+    ${}
+    </title>
+    
   <link href="/ui/style.css" rel="stylesheet" />
 </head>
 
@@ -30,7 +33,7 @@ var html template = `
         </div>
         <hr/>
 <h3>
-    ${header}
+    ${heading}
     
     </h3>    
     
