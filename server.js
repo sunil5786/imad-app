@@ -18,12 +18,10 @@ var articleone = {
     var heading = data.header;
     var content = data.content ;
     
-var htmltemplate = `
+var htmlTemplate = `
 <html>
   <head>
-      <title> 
-                  ${title}
-      </title>
+      <title> ${title} </title>
    <link href="/ui/style.css" rel="stylesheet" />
 </head>
 
@@ -53,6 +51,7 @@ var htmltemplate = `
 </html>
 
 `;
+return htmlTemplate;
 }
 
 
@@ -79,19 +78,12 @@ var htmltemplate = `
 };
 
 
-
-
-
-
-
-
-//<meta name="viewport" content="width=device-width", initial-scale=1 />;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/article-one', function(req,res){
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res.sendcreateTemplate(articleone));
 });
 
 app.get('/article-two', function(req,res){
