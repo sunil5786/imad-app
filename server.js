@@ -21,7 +21,7 @@ var articleone = {
 var htmlTemplate = `
 <html>
   <head>
-      <title> ${title} </title>
+      <title> ${titlee} </title>
    <link href="/ui/style.css" rel="stylesheet" />
 </head>
 
