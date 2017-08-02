@@ -12,8 +12,8 @@ var articleone = {
     date:'2nd August 2017',
     content: ` 
     
-    
-var html template = `
+    function createtemplate(data){
+var htmltemplate = `
 <html>
 <head>
     
@@ -49,6 +49,8 @@ var html template = `
 </body>
 </html>
 
+`;
+}
 
 
 
