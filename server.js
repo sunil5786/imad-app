@@ -6,17 +6,13 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-    
-    articleone = {},
-    articletwo = {},
-    articlethree = {},
-    
-    title:'Article One | Sunil ',
-    heading:'Article oneee....',
-    date:'2nd August 2017',
-    content: ` 
-    
-    function createtemplate(data){
+    articleone : { },
+    articletwo : { },
+    articlethree : { },
+};
+
+
+      function createtemplate(data){
     var title = data.file;
     var date = data.date;
     var heading = data.header;
