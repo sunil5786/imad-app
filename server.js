@@ -18,7 +18,7 @@ var html template = `
 <head>
     
     <title> 
-    ${}
+                  ${title}
     </title>
     
   <link href="/ui/style.css" rel="stylesheet" />
